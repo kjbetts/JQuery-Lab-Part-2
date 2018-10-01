@@ -1,3 +1,4 @@
+//when user clicks on table number, Reservation form is brought up
 $(document).ready(function() {
   var table;
   $(".table").on("click", function() {
@@ -6,6 +7,7 @@ $(document).ready(function() {
     $(".reservations").fadeIn('slow');
 
   })
+  // when user clicks on save button, Reservation form fades out
   $("#Save").on("click", function() {
     table.addClass('selected');
     $(".reservations").fadeOut('slow');
@@ -25,10 +27,5 @@ $(document).ready(function() {
   $("#xbutton").on("click", function() {
     $(".reservations").fadeOut("slow");
   })
-
-
-
-
-
 
 });
